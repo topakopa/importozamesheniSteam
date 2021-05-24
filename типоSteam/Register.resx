@@ -1,0 +1,195 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBoxPasword.PlaceholderText" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="&gt;&gt;buttonReg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxPasword.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBoxDirectPasword.PlaceholderText" xml:space="preserve">
+    <value>Подтвердите пароль</value>
+  </data>
+  <data name="&gt;&gt;buttonReg.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxPasword.Name" xml:space="preserve">
+    <value>textBoxPasword</value>
+  </data>
+  <data name="&gt;&gt;buttonReg.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonReg.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>7, 89</value>
+  </data>
+  <data name="textBoxPasword.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>229, 21</value>
+  </data>
+  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+  <data name="textBoxLogin.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="textBoxPasword.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBoxDirectPasword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxPasword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxPasword.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>7, 35</value>
+  </data>
+  <data name="&gt;&gt;textBoxPasword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonReg.Name" xml:space="preserve">
+    <value>buttonReg</value>
+  </data>
+  <data name="$this.AccessibleName" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="&gt;&gt;textBoxDirectPasword.Name" xml:space="preserve">
+    <value>textBoxDirectPasword</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="textBoxDirectPasword.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogin.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxLogin.PlaceholderText" xml:space="preserve">
+    <value>Введите логин</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
+    <value>7, 15</value>
+  </data>
+  <data name="buttonReg.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxLogin.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>7, 8</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="&gt;&gt;textBoxDirectPasword.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonReg.Text" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLogin.Name" xml:space="preserve">
+    <value>textBoxLogin</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.AccessibleDescription" xml:space="preserve">
+    <value>I don't know how it work</value>
+  </data>
+  <data name="buttonReg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>242, 147</value>
+  </data>
+  <data name="textBoxDirectPasword.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>7, 62</value>
+  </data>
+  <data name="textBoxDirectPasword.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>229, 21</value>
+  </data>
+  <data name="&gt;&gt;textBoxDirectPasword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxLogin.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>229, 21</value>
+  </data>
+  <data name="buttonReg.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>229, 52</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>ru-RU</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+</root>

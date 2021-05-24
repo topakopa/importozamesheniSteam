@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "типоSteam": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    },
+    "хз": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\шурик\\source\\repos\\типоSteam\\WinFormsApp1\\bin\\Debug\\netcoreapp3.1\\WinFormsApp1.exe"
+    }
+  }
+}
