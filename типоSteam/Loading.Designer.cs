@@ -1,5 +1,5 @@
 ﻿
-namespace типоSteam
+namespace Steam
 {
     partial class Loading
     {

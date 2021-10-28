@@ -1,13 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace типоSteam.dbl
+namespace Steam.DataBase
 {
     public class SteamContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<UserGame> UserGames { get; set; }
         public SteamContext()
         {
             Database.EnsureCreated();
@@ -18,5 +20,6 @@ namespace типоSteam.dbl
             optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=ParodyToSteam;Trusted_Connection=True;");
         }
 
+        
     }
 }

@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace типоSteam
+namespace Steam
 {
     public partial class Loading : Form
     {

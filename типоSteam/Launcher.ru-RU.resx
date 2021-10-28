@@ -57,75 +57,112 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBoxLogin.AccessibleDescription" xml:space="preserve">
-    <value>Введите сюда логин. Если вас нет в системе нажите на "Регистрация"</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GameScrn.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="textBoxLogin.AccessibleName" xml:space="preserve">
-    <value>Логин</value>
+  <data name="toolStripMenuItemEditPass.Text" xml:space="preserve">
+    <value>Настройки акаунта</value>
   </data>
-  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
-  <data name="checkBox1.AutoSize" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
+  <data name="buttonOKnick.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="buttonOKnick.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>112, 19</value>
+  <data name="buttonOKnick.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>556, 10</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>Показать пароль</value>
+  <data name="buttonOKnick.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>25, 23</value>
   </data>
-  <data name="textBox1.Multiline" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
+  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+  <data name="buttonOKnick.Visible" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>791, 165</value>
+  <data name="buttonCanselNick.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Если вы здесь впервые то
-1. Нажмите кнопку "Регистрация".
-2. Придумайте логин и введите его в поле "Введите логин" в окне "Регистрация".
-3. Придумайте пароль и введите его в поле "Введите пароль" в окне "Регистрация".
-4. Повторите пароль введя его в поле "Подтвердите пароль" в окне "Регистрация".
-5. Нажмите Регистрация
-    если система выдала ошибку то (там всё написано).
-6. Нажмите кнопку "Войти".
-
-
-Если же вы зарегестрированы в Системе но забыли пароль то нажмите кнопку "(данная кнопка отсутсвует)".
-
+  <data name="buttonCanselNick.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="buttonCanselNick.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>522, 10</value>
+  </data>
+  <data name="buttonCanselNick.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>28, 22</value>
+  </data>
+  <data name="buttonCanselNick.Visible" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
+  <data name="GameList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
+  </data>
+  <data name="GameList.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>6, 42</value>
+  </data>
+  <data name="GameList.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>225, 408</value>
+  </data>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB+
+        CAAAAk1TRnQBSQFMAwEBAAGAAQEBgAEBARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
+        ARADAAEBAQABIAYAARASAAF/AYQBnQH/AXYBhwGoAf8BYgFsAY0B/wFOAVUBbQH/AWIBdwGPAf8BaQGA
+        AZEB/wFnAXMBhAH/AWgBZAGAAf8BcQFrAYkB/wF0AW8BjAH/AXMBbAGIAf8BcQFrAYMB/wGMAYIBmgH/
+        AYMBfAGYAf8CgQGbAf8BeQF9AZYB/8AAAYQBiwGmAf8BdgF+AaMB/wFWAWkBgAH/AW4BgwGaAf8BOgEp
+        AWQB/wExARoBaAH/AU8BTQGSAf8BTwFcAWkB/wFCAU0BZwH/AUkBYAF9Af8BSQFeAXwB/wFIAVMBcQH/
+        AVcBYQFxAf8BcQF1AYQB/wGDAYcBoAH/AYIBhwGhAf/AAAGSAZcBswH/AYEBhwGrAf8BYAFyAYAB/wEp
+        ARoBUAH/ASwBGwFoAf8BKQEmAYkB/wExARwBmQH/AUEBRQFiAf8BLwE8AXAB/wEuARsBWwH/ATUBGwFr
+        Af8BMwEZAWQB/wE3ARkBlAH/AUUBPwF0Af8BigGMAaYB/wF5AXoBlwH/wAABlAGaAbMB/wGGAYkBpQH/
+        AYwBqgHPAf8BcAF6AbcB/wEbAR0BYgH/AS4BNQFlAf8BSQFXAZAB/wFLAVYBgQH/ASwBPwHCAf8BKAEc
+        AWsB/wEnASsBfwH/ASABLwFsAf8BMgEfAYsB/wJ0AZgB/wGWAZMBrwH/AYABfgGZAf/AAAGLAZMBqwH/
+        AX0BlQGyAf8BoQHHAfAB/wF6AYcByAH/AXYBkAGwAf8BoQHHAfEB/wGhAccB8QH/AZQBtQHbAf8BnQHB
+        AekB/wGEAZ8BxAH/AT0BQgF+Af8BLQExAUsB/wE8ATMBNwH/AYsBiQGqAf8BkAGPAa0B/wGUAZABqQH/
+        wAABfwGOAaUB/wGhAccB8QH/AZIBtAHZAf8BawFxAbEB/wF7AZQBuAH/AaEBxwHxAf8BkwGxAdIB/wGg
+        AcMB7AH/AYwBqgHQAf8BoQHHAfEB/wGHAaYByAH/AUkBQAFoAf8CTAFrAf8BbAFrAX4B/wKSAagB/wGR
+        AY8BoQH/wAABjgGUAasB/wGNAa0B0QH/AZ8BwgHwAf8BcgFxAcsB/wFwAYQBqgH/AaEBxwHxAf8BjgGf
+        AbAB/wGiAcYB7gH/AY0BnQGuAf8BnQHAAegB/wFcAWwBjQH/AVoBWAGbAf8BegGNAbkB/wF0AXYBhwH/
+        AZABjgGhAf8BkAGNAaMB/8AAAYIBgQGZAf8BGgErAaYB/wFjAVgBbAH/AVwBVgF3Af8BeAGLAb0B/wGh
+        AccB8QH/AZoBvgHmAf8BkAGrAdwB/wGVAbQB1wH/AZkBvAHjAf8BfgGaAb8B/wFnAXMBmAH/AUsBUAFn
+        Af8BQgE9AVEB/wGPAY0BnQH/AY4BjQGeAf/AAAGXAZYBqAH/AWQBXgFvAf8BpgGCAWsB/wGCAYYBjgH/
+        AWEBdAGvAf8BdwGFAckB/wFWAWoBuQH/AScBVgG4Af8BigGqAdAB/wGKAakBygH/AUEBQgFJAf8BSQFL
+        AVoB/wFuAXQBrgH/AVQBSAFBAf8BjAGJAZgB/wGQAY8BngH/wAABpgGlAbYB/wGHAX0BeAH/AaYBggFr
+        Af8BUQFeAYEB/wEoAXQB3QH/AScBewHqAf8BJwF7Ae8B/wEoAYIB7QH/ASQBZAHQAf8BKgFCAXUB/wE+
+        AS4BLAH/ATIBKgEoAf8BRAE3ATIB/wFBATEBLgH/AUQCOQH/AXoBeAGFAf/AAAGmAaQBtQH/AYcBfwF8
+        Af8BpQGCAWsB/wE/AVsBoQH/ASIBZgHwAf8BIwFtAe8B/wEjAWsB7wH/ASIBZgHwAf8BKgFfAcAB/wE7
+        ATQBOgH/ATcBKgEoAf8BPQEuAS0B/wE+AS0BLAH/AUUBMwEyAf8BRAEyATAB/wE9AS8BLgH/wAABrQGo
+        AbYB/wGEAn8B/wGpAY0BcwH/AUABWgGfAf8BJAFYAcQB/wE9AVoBoAH/AR0BTwHTAf8BNgFZAaMB/wF5
+        AXsBjgH/AXEBbQF7Af8BNAEpAScB/wE7AS0BKwH/AUcBNgEzAf8BWgFIATgB/wFTAT8BMAH/AXEBVQE/
+        Af/AAAGyAakBtAH/AYYCgAH/AaQBgwFsAf8BdAFsAXIB/wGZAZcBqAH/AZoBmAGqAf8BjQGMAZ0B/wGT
+        AZIBowH/AZIBkAGiAf8BkAGNAaAB/wFCAToBPQH/ATsBLAEqAf8BQgExAS0B/wFrAU0BPAH/AVoBQgEy
+        Af8BZAFVAU8B/8AAAY4BhAGGAf8BhwF/AYUB/wGhAYIBbAH/AXsBdwGCAf8BmgGYAawB/wGeAZwBrwH/
+        AZ4BnAGvAf8BnAGZAa4B/wGbAZgBrQH/AZgBlgGoAf8BWQFTAVoB/wE5ASwBKgH/AUwBOwEzAf8BRwE+
+        ATMB/wFbAUUBNAH/AXsBeQGEAf/AAAGWAZABjAH/AXYBcAF0Af8BfwFrAVwB/wGSAYkBmAH/AaUBoAG0
+        Af8BogGfAbQB/wGhAaABsgH/AZ8BngGwAf8BoAGdAbAB/wGhAZ4BsQH/AYwBiQGaAf8BPQE3ATQB/wFS
+        AUsBSAH/AUgBPAE6Af8BeAFqAU8B/wFmAVwBWQH/wAABgAGBAYgB/wF4AXMBewH/AWYBZwFsAf8BhgF+
+        AYYB/wGoAZ4BrAH/AagBoAG0Af8BogGgAbQB/wGhAaABsgH/AaABoQGyAf8BnAGhAbIB/wGbAZoBqwH/
+        ApsBqwH/ApgBqQH/AXQBbwF3Af8BNAEtASYB/wFsAWUBbAH/wAABQgFNAT4HAAE+AwABKAMAAUADAAEQ
+        AwABAQEAAQEFAAGAFwAD/4EACw==
 </value>
   </data>
-  <data name="textBox1.Visible" type="System.Boolean, System.Private.CoreLib">
-    <value>False</value>
+  <data name="GameList.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>16</value>
   </data>
-  <data name="textBox2.Multiline" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
+  <data name="GameInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left</value>
   </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>791, 90</value>
+  <data name="GameInfo.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>238, 332</value>
   </data>
-  <data name="textBox2.Text" xml:space="preserve">
-    <value>Если вы уже зарегестрированы в системе но незнаете как войти то
-1. Введите логин который вы вводили при регистрации в поле "Введите логин".
-2. Введите пароль который вы вводили при регистрации в поле "Введите пароль".
-3. Нажмите на кнопку "Войти".
-    если система выдала ошибку то (не храните пароли в памяти а записывайте куда-нидуть) в ином случае инструкция ниже. </value>
+  <data name="GameInfo.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>550, 118</value>
   </data>
-  <data name="textBox2.Visible" type="System.Boolean, System.Private.CoreLib">
-    <value>False</value>
-  </data>
-  <data name="checkBoxSave.AutoSize" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBoxSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="checkBoxSave.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>201, 19</value>
-  </data>
-  <data name="checkBoxSave.Text" xml:space="preserve">
-    <value>Созранить пользователя в системе</value>
+  <data name="GameInfo.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>17</value>
   </data>
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -941,8 +978,5 @@
         XFx9WBwAXFx9WBwAXFx9WBwAXFx9WBwAXFx9WBwAXFx9WBwAXFx9WBwAXFx9WBwAXFx9WP8fY4pYaJo+
         J14AAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
   </data>
 </root>

@@ -57,15 +57,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="buttonReg.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>System</value>
-  </data>
-  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
-  <data name="textBoxPasword.PasswordChar" type="System.Char, System.Private.CoreLib" xml:space="preserve">
-    <value>*</value>
-  </data>
-  <data name="textBoxDirectPasword.PasswordChar" type="System.Char, System.Private.CoreLib" xml:space="preserve">
-    <value>*</value>
-  </data>
 </root>

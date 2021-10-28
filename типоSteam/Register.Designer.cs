@@ -1,5 +1,5 @@
 ﻿
-namespace типоSteam
+namespace Steam
 {
     partial class Register
     {
@@ -74,12 +74,12 @@ namespace типоSteam
             this.Controls.Add(this.buttonReg);
             this.Controls.Add(this.textBoxPasword);
             this.Controls.Add(this.textBoxLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Register";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

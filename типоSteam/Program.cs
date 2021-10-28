@@ -1,10 +1,12 @@
+using Steam;
+using Steam.WinForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace типоSteam
+namespace Steam
 {
     class Program
     {
@@ -18,7 +20,12 @@ namespace типоSteam
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Enter());
-            Application.Run(new Loading());
+
+            if (Launcher.Start)
+            {
+                Application.Run(new Launcher());
+            }
+            
         }
     }
 }

@@ -57,75 +57,376 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBoxLogin.AccessibleDescription" xml:space="preserve">
-    <value>Введите сюда логин. Если вас нет в системе нажите на "Регистрация"</value>
+  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripMenuItemEditGameInfo.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>204, 22</value>
   </data>
-  <data name="textBoxLogin.AccessibleName" xml:space="preserve">
-    <value>Логин</value>
+  <data name="buttonSearch.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelNick.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemDELgame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelNick.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>238, 332</value>
+  </data>
+  <data name="&gt;&gt;textBoxSearch.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonOKnick.Name" xml:space="preserve">
+    <value>buttonOKnick</value>
+  </data>
+  <data name="labelNicname.Text" xml:space="preserve">
+    <value>Ваш ник</value>
+  </data>
+  <data name="buttonOKnick.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>547, 11</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditNick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBoxEditAcaunt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBoxEditGameInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
-  <data name="checkBox1.AutoSize" type="System.Boolean, System.Private.CoreLib">
+  <data name="GameInfo.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="labelNick.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>646, 14</value>
+  </data>
+  <data name="labelConsole.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>0, 17</value>
+  </data>
+  <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>248, 6</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="GameList.ItemHeight" type="System.Int32, System.Private.CoreLib">
+    <value>15</value>
+  </data>
+  <data name="buttonCanselNick.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>485, 11</value>
+  </data>
+  <data name="contextMenuGameEdit.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GameList.ToolTip" xml:space="preserve">
+    <value>Список игр</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditGameImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditNick.Name" xml:space="preserve">
+    <value>toolStripMenuItemEditNick</value>
+  </data>
+  <data name="&gt;&gt;buttonSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Launcher</value>
+  </data>
+  <data name="GameInfo.Multiline" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>112, 19</value>
+  <data name="&gt;&gt;contextMenuGameEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>Показать пароль</value>
+  <data name="&gt;&gt;GameScrn.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
-  <data name="textBox1.Multiline" type="System.Boolean, System.Private.CoreLib">
+  <data name="&gt;&gt;toolStripTextBoxEditGame.Name" xml:space="preserve">
+    <value>toolStripTextBoxEditGame</value>
+  </data>
+  <data name="&gt;&gt;labelNicname.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditPass.Name" xml:space="preserve">
+    <value>toolStripMenuItemEditPass</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBoxEditGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GameList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelNicname.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemAddGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonSearch.Text" xml:space="preserve">
+    <value>Искать</value>
+  </data>
+  <data name="&gt;&gt;GameInfo.Name" xml:space="preserve">
+    <value>GameInfo</value>
+  </data>
+  <data name="buttonPlay.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxNicname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSearch.Name" xml:space="preserve">
+    <value>textBoxSearch</value>
+  </data>
+  <data name="toolStripTextBoxEditGame.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>100, 23</value>
+  </data>
+  <data name="&gt;&gt;buttonCanselNick.Name" xml:space="preserve">
+    <value>buttonCanselNick</value>
+  </data>
+  <data name="&gt;&gt;progressBarConsole.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelNick.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>791, 165</value>
+  <data name="toolStripMenuItemEditGameName.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>204, 22</value>
   </data>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Если вы здесь впервые то
-1. Нажмите кнопку "Регистрация".
-2. Придумайте логин и введите его в поле "Введите логин" в окне "Регистрация".
-3. Придумайте пароль и введите его в поле "Введите пароль" в окне "Регистрация".
-4. Повторите пароль введя его в поле "Подтвердите пароль" в окне "Регистрация".
-5. Нажмите Регистрация
-    если система выдала ошибку то (там всё написано).
-6. Нажмите кнопку "Войти".
-
-
-Если же вы зарегестрированы в Системе но забыли пароль то нажмите кнопку "(данная кнопка отсутсвует)".
-
-</value>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
   </data>
-  <data name="textBox1.Visible" type="System.Boolean, System.Private.CoreLib">
-    <value>False</value>
+  <data name="buttonPlay.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
   </data>
-  <data name="textBox2.Multiline" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
-  </data>
-  <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>791, 90</value>
-  </data>
-  <data name="textBox2.Text" xml:space="preserve">
-    <value>Если вы уже зарегестрированы в системе но незнаете как войти то
-1. Введите логин который вы вводили при регистрации в поле "Введите логин".
-2. Введите пароль который вы вводили при регистрации в поле "Введите пароль".
-3. Нажмите на кнопку "Войти".
-    если система выдала ошибку то (не храните пароли в памяти а записывайте куда-нидуть) в ином случае инструкция ниже. </value>
-  </data>
-  <data name="textBox2.Visible" type="System.Boolean, System.Private.CoreLib">
-    <value>False</value>
-  </data>
-  <data name="checkBoxSave.AutoSize" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
+  <data name="textBox1.ToolTip" xml:space="preserve">
+    <value>Описание игры</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBoxSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="GameScrn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="checkBoxSave.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>201, 19</value>
+  <data name="labelNicname.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="checkBoxSave.Text" xml:space="preserve">
-    <value>Созранить пользователя в системе</value>
+  <data name="&gt;&gt;buttonOKnick.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxNicname.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditGameInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditGame.Name" xml:space="preserve">
+    <value>toolStripMenuItemEditGame</value>
+  </data>
+  <data name="textBoxNicname.ToolTip" xml:space="preserve">
+    <value>Ваш ник</value>
+  </data>
+  <data name="buttonDop.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="toolStripMenuItemAddGame.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>251, 22</value>
+  </data>
+  <data name="&gt;&gt;labelNick.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="buttonPlay.Text" xml:space="preserve">
+    <value>Играть</value>
+  </data>
+  <data name="&gt;&gt;buttonCanselNick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAB+
+        CAAAAk1TRnQBSQFMAwEBAAEIAQABxAEAARABAAEQAQAE/wEhARAI/wFCAU0BNgcAATYDAAEoAwABQAMA
+        ARADAAEBAQABIAYAARASAAF/AYQBnQH/AXYBhwGoAf8BYgFsAY0B/wFOAVUBbQH/AWIBdwGPAf8BaQGA
+        AZEB/wFnAXMBhAH/AWgBZAGAAf8BcQFrAYkB/wF0AW8BjAH/AXMBbAGIAf8BcQFrAYMB/wGMAYIBmgH/
+        AYMBfAGYAf8CgQGbAf8BeQF9AZYB/8AAAYQBiwGmAf8BdgF+AaMB/wFWAWkBgAH/AW4BgwGaAf8BOgEp
+        AWQB/wExARoBaAH/AU8BTQGSAf8BTwFcAWkB/wFCAU0BZwH/AUkBYAF9Af8BSQFeAXwB/wFIAVMBcQH/
+        AVcBYQFxAf8BcQF1AYQB/wGDAYcBoAH/AYIBhwGhAf/AAAGSAZcBswH/AYEBhwGrAf8BYAFyAYAB/wEp
+        ARoBUAH/ASwBGwFoAf8BKQEmAYkB/wExARwBmQH/AUEBRQFiAf8BLwE8AXAB/wEuARsBWwH/ATUBGwFr
+        Af8BMwEZAWQB/wE3ARkBlAH/AUUBPwF0Af8BigGMAaYB/wF5AXoBlwH/wAABlAGaAbMB/wGGAYkBpQH/
+        AYwBqgHPAf8BcAF6AbcB/wEbAR0BYgH/AS4BNQFlAf8BSQFXAZAB/wFLAVYBgQH/ASwBPwHCAf8BKAEc
+        AWsB/wEnASsBfwH/ASABLwFsAf8BMgEfAYsB/wJ0AZgB/wGWAZMBrwH/AYABfgGZAf/AAAGLAZMBqwH/
+        AX0BlQGyAf8BoQHHAfAB/wF6AYcByAH/AXYBkAGwAf8BoQHHAfEB/wGhAccB8QH/AZQBtQHbAf8BnQHB
+        AekB/wGEAZ8BxAH/AT0BQgF+Af8BLQExAUsB/wE8ATMBNwH/AYsBiQGqAf8BkAGPAa0B/wGUAZABqQH/
+        wAABfwGOAaUB/wGhAccB8QH/AZIBtAHZAf8BawFxAbEB/wF7AZQBuAH/AaEBxwHxAf8BkwGxAdIB/wGg
+        AcMB7AH/AYwBqgHQAf8BoQHHAfEB/wGHAaYByAH/AUkBQAFoAf8CTAFrAf8BbAFrAX4B/wKSAagB/wGR
+        AY8BoQH/wAABjgGUAasB/wGNAa0B0QH/AZ8BwgHwAf8BcgFxAcsB/wFwAYQBqgH/AaEBxwHxAf8BjgGf
+        AbAB/wGiAcYB7gH/AY0BnQGuAf8BnQHAAegB/wFcAWwBjQH/AVoBWAGbAf8BegGNAbkB/wF0AXYBhwH/
+        AZABjgGhAf8BkAGNAaMB/8AAAYIBgQGZAf8BGgErAaYB/wFjAVgBbAH/AVwBVgF3Af8BeAGLAb0B/wGh
+        AccB8QH/AZoBvgHmAf8BkAGrAdwB/wGVAbQB1wH/AZkBvAHjAf8BfgGaAb8B/wFnAXMBmAH/AUsBUAFn
+        Af8BQgE9AVEB/wGPAY0BnQH/AY4BjQGeAf/AAAGXAZYBqAH/AWQBXgFvAf8BpgGCAWsB/wGCAYYBjgH/
+        AWEBdAGvAf8BdwGFAckB/wFWAWoBuQH/AScBVgG4Af8BigGqAdAB/wGKAakBygH/AUEBQgFJAf8BSQFL
+        AVoB/wFuAXQBrgH/AVQBSAFBAf8BjAGJAZgB/wGQAY8BngH/wAABpgGlAbYB/wGHAX0BeAH/AaYBggFr
+        Af8BUQFeAYEB/wEoAXQB3QH/AScBewHqAf8BJwF7Ae8B/wEoAYIB7QH/ASQBZAHQAf8BKgFCAXUB/wE+
+        AS4BLAH/ATIBKgEoAf8BRAE3ATIB/wFBATEBLgH/AUQCOQH/AXoBeAGFAf/AAAGmAaQBtQH/AYcBfwF8
+        Af8BpQGCAWsB/wE/AVsBoQH/ASIBZgHwAf8BIwFtAe8B/wEjAWsB7wH/ASIBZgHwAf8BKgFfAcAB/wE7
+        ATQBOgH/ATcBKgEoAf8BPQEuAS0B/wE+AS0BLAH/AUUBMwEyAf8BRAEyATAB/wE9AS8BLgH/wAABrQGo
+        AbYB/wGEAn8B/wGpAY0BcwH/AUABWgGfAf8BJAFYAcQB/wE9AVoBoAH/AR0BTwHTAf8BNgFZAaMB/wF5
+        AXsBjgH/AXEBbQF7Af8BNAEpAScB/wE7AS0BKwH/AUcBNgEzAf8BWgFIATgB/wFTAT8BMAH/AXEBVQE/
+        Af/AAAGyAakBtAH/AYYCgAH/AaQBgwFsAf8BdAFsAXIB/wGZAZcBqAH/AZoBmAGqAf8BjQGMAZ0B/wGT
+        AZIBowH/AZIBkAGiAf8BkAGNAaAB/wFCAToBPQH/ATsBLAEqAf8BQgExAS0B/wFrAU0BPAH/AVoBQgEy
+        Af8BZAFVAU8B/8AAAY4BhAGGAf8BhwF/AYUB/wGhAYIBbAH/AXsBdwGCAf8BmgGYAawB/wGeAZwBrwH/
+        AZ4BnAGvAf8BnAGZAa4B/wGbAZgBrQH/AZgBlgGoAf8BWQFTAVoB/wE5ASwBKgH/AUwBOwEzAf8BRwE+
+        ATMB/wFbAUUBNAH/AXsBeQGEAf/AAAGWAZABjAH/AXYBcAF0Af8BfwFrAVwB/wGSAYkBmAH/AaUBoAG0
+        Af8BogGfAbQB/wGhAaABsgH/AZ8BngGwAf8BoAGdAbAB/wGhAZ4BsQH/AYwBiQGaAf8BPQE3ATQB/wFS
+        AUsBSAH/AUgBPAE6Af8BeAFqAU8B/wFmAVwBWQH/wAABgAGBAYgB/wF4AXMBewH/AWYBZwFsAf8BhgF+
+        AYYB/wGoAZ4BrAH/AagBoAG0Af8BogGgAbQB/wGhAaABsgH/AaABoQGyAf8BnAGhAbIB/wGbAZoBqwH/
+        ApsBqwH/ApgBqQH/AXQBbwF3Af8BNAEtASYB/wFsAWUBbAH/wAABQgFNAT4HAAE+AwABKAMAAUADAAEQ
+        AwABAQEAAQEFAAGAFwAD/5cACw==
+</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditGameName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;buttonSearch.Name" xml:space="preserve">
+    <value>buttonSearch</value>
+  </data>
+  <data name="textBoxNicname.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="buttonDop.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>367, 10</value>
+  </data>
+  <data name="toolStripMenuItemEditPass.Text" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="&gt;&gt;labelNicname.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTipSteam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripMenuItemDELgame.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>251, 22</value>
+  </data>
+  <data name="&gt;&gt;buttonOKnick.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="toolStripMenuItemDELgame.Text" xml:space="preserve">
+    <value>Удалить игру</value>
+  </data>
+  <data name="GameList.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;buttonDop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="GameInfo.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
+  <data name="GameList.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>6, 41</value>
+  </data>
+  <data name="&gt;&gt;labelNicname.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonSearch.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="toolStripMenuItemEditPass.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>251, 22</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemDELgame.Name" xml:space="preserve">
+    <value>toolStripMenuItemDELgame</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonPlay.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="progressBarConsole.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>150, 16</value>
+  </data>
+  <data name="buttonOKnick.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;textBoxSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonDop.ToolTip" xml:space="preserve">
+    <value>Контексное меню</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator.Name" xml:space="preserve">
+    <value>toolStripSeparator</value>
+  </data>
+  <data name="&gt;&gt;GameList.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonOKnick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCanselNick.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonSearch.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>167, 10</value>
+  </data>
+  <data name="&gt;&gt;buttonDop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GameInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="toolStripMenuItemEditNick.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>251, 22</value>
+  </data>
+  <data name="&gt;&gt;buttonDop.Name" xml:space="preserve">
+    <value>buttonDop</value>
+  </data>
+  <data name="&gt;&gt;GameList.Name" xml:space="preserve">
+    <value>GameList</value>
+  </data>
+  <data name="toolStripMenuItemEditGame.Text" xml:space="preserve">
+    <value>Изменить описание \ скриншот</value>
+  </data>
+  <data name="&gt;&gt;GameScrn.Name" xml:space="preserve">
+    <value>GameScrn</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelNick.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditGameInfo.Name" xml:space="preserve">
+    <value>toolStripMenuItemEditGameInfo</value>
   </data>
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -942,7 +1243,272 @@
         J14AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="GameList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
   </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="buttonOKnick.ToolTip" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="&gt;&gt;buttonDop.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="contextMenuGameEdit.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>252, 120</value>
+  </data>
+  <data name="&gt;&gt;GameList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelNick.Name" xml:space="preserve">
+    <value>labelNick</value>
+  </data>
+  <data name="GameScrn.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelNick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelNick.Text" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="buttonCanselNick.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>15</value>
+  </data>
+  <data name="toolStripMenuItemEditNick.Text" xml:space="preserve">
+    <value>Изменить ник</value>
+  </data>
+  <data name="&gt;&gt;buttonCanselNick.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonDop.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>25, 23</value>
+  </data>
+  <data name="labelNick.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>12</value>
+  </data>
+  <data name="textBoxSearch.ToolTip" xml:space="preserve">
+    <value>Поиск по списку</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 454</value>
+  </data>
+  <data name="textBoxSearch.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>155, 21</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditGameImage.Name" xml:space="preserve">
+    <value>toolStripMenuItemEditGameImage</value>
+  </data>
+  <data name="&gt;&gt;GameInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditGameName.Name" xml:space="preserve">
+    <value>toolStripMenuItemEditGameName</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripTextBoxEditAcaunt.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>100, 23</value>
+  </data>
+  <data name="&gt;&gt;textBoxNicname.Name" xml:space="preserve">
+    <value>textBoxNicname</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="labelNick.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>30, 15</value>
+  </data>
+  <data name="&gt;&gt;buttonSearch.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;progressBarConsole.Name" xml:space="preserve">
+    <value>progressBarConsole</value>
+  </data>
+  <data name="toolStripMenuItemEditGameImage.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>204, 22</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>17</value>
+  </data>
+  <data name="buttonSearch.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>64, 23</value>
+  </data>
+  <data name="statusStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>800, 476</value>
+  </data>
+  <data name="textBoxSearch.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>6, 11</value>
+  </data>
+  <data name="&gt;&gt;contextMenuGameEdit.Name" xml:space="preserve">
+    <value>contextMenuGameEdit</value>
+  </data>
+  <data name="&gt;&gt;textBoxSearch.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>800, 22</value>
+  </data>
+  <data name="&gt;&gt;GameScrn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toolStripMenuItemAddGame.Text" xml:space="preserve">
+    <value>Добавить игру</value>
+  </data>
+  <data name="buttonPlay.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>124, 23</value>
+  </data>
+  <data name="GameInfo.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>237, 330</value>
+  </data>
+  <data name="buttonCanselNick.ToolTip" xml:space="preserve">
+    <value>Отмена
+</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonDop.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBoxNicname.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxNicname.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="GameList.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>225, 409</value>
+  </data>
+  <data name="&gt;&gt;GameScrn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonSearch.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>9</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Steam</value>
+  </data>
+  <data name="contextMenuStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GameScrn.ToolTip" xml:space="preserve">
+    <value>Картинка игры</value>
+  </data>
+  <data name="&gt;&gt;buttonPlay.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemAddGame.Name" xml:space="preserve">
+    <value>toolStripMenuItemAddGame</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItemEditPass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelConsole.Name" xml:space="preserve">
+    <value>labelConsole</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GameInfo.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>551, 120</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;buttonPlay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelConsole.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxNicname.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>145, 21</value>
+  </data>
+  <data name="&gt;&gt;labelNicname.Name" xml:space="preserve">
+    <value>labelNicname</value>
+  </data>
+  <data name="GameInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;GameInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxSearch.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>8</value>
+  </data>
+  <data name="GameScrn.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>551, 282</value>
+  </data>
+  <data name="textBoxNicname.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>643, 11</value>
+  </data>
+  <data name="&gt;&gt;toolTipSteam.Name" xml:space="preserve">
+    <value>toolTipSteam</value>
+  </data>
+  <data name="labelNicname.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="labelNicname.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>587, 14</value>
+  </data>
+  <data name="textBoxSearch.PlaceholderText" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="GameScrn.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>237, 42</value>
+  </data>
+  <data name="toolStripMenuItemEditGame.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>251, 22</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBoxEditAcaunt.Name" xml:space="preserve">
+    <value>toolStripTextBoxEditAcaunt</value>
+  </data>
+  <data name="buttonPlay.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>237, 10</value>
+  </data>
+  <data name="&gt;&gt;toolStripTextBoxEditGameInfo.Name" xml:space="preserve">
+    <value>toolStripTextBoxEditGameInfo</value>
+  </data>
+  <data name="GameInfo.ToolTip" xml:space="preserve">
+    <value>Описание игры</value>
+  </data>
+  <data name="toolStripTextBoxEditGameInfo.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>100, 23</value>
+  </data>
+  <data name="textBoxNicname.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="labelNicname.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 15</value>
+  </data>
+  <data name="labelNicname.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;buttonPlay.Name" xml:space="preserve">
+    <value>buttonPlay</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>ru-RU</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
 </root>

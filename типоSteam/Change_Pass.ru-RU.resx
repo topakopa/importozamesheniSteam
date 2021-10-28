@@ -61,11 +61,99 @@
   <data name="buttonReg.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>System</value>
   </data>
+  <data name="buttonReg.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
   <data name="textBoxPasword.PasswordChar" type="System.Char, System.Private.CoreLib" xml:space="preserve">
     <value>*</value>
   </data>
+  <data name="textBoxPasword.PlaceholderText" xml:space="preserve">
+    <value>Введите новый пароль</value>
+  </data>
+  <data name="textBoxOldPass.PlaceholderText" xml:space="preserve">
+    <value>Введите старый пароль</value>
+  </data>
+  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="textBoxOldPass.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>229, 21</value>
+  </data>
   <data name="textBoxDirectPasword.PasswordChar" type="System.Char, System.Private.CoreLib" xml:space="preserve">
     <value>*</value>
+  </data>
+  <data name="textBoxDirectPasword.PlaceholderText" xml:space="preserve">
+    <value>Подтвердите новый пароль</value>
+  </data>
+  <data name="textBoxLogin.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>300, 8</value>
+  </data>
+  <data name="textBoxLogin.PlaceholderText" xml:space="preserve">
+    <value>Введите новый логин </value>
+  </data>
+  <data name="textBoxLogin.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>11</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>9, 180</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>231, 30</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Для подтверждения введите старый пароль 
+в поле "Введите старый пароль"</value>
+  </data>
+  <data name="linkLabel1.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>88, 15</value>
+  </data>
+  <data name="linkLabel1.Text" xml:space="preserve">
+    <value>Изменить логин</value>
+  </data>
+  <data name="linkLabel2.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="linkLabel2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>90, 15</value>
+  </data>
+  <data name="linkLabel2.Text" xml:space="preserve">
+    <value>Удалить аккаунт</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>223, 52</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Удалить аккаунт</value>
+  </data>
+  <data name="button1.Visible" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>537, 163</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Изменение пароля</value>
   </data>
 </root>

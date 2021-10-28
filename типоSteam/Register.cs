@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using Steam.DataBase;
+using System;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using типоSteam.dbl;
 
-namespace типоSteam
+namespace Steam
 {
     public partial class Register : Form
     {
+        Enter Enter { get; set; }
+        public Register(Enter enter) : this()
+        {
+            Enter = enter;
+        }
         public Register()
         {
             InitializeComponent();
@@ -52,6 +52,8 @@ namespace типоSteam
                     });
                     context.SaveChanges();
                     MessageBox.Show("Акаунт успешно создан", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Enter.textBoxLogin.Text = login;
+                    Enter.textBoxPasword.Text = pasword;
                     this.Close();
                 }
             }
