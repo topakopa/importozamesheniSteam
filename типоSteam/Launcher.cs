@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Steam.Account;
 using Steam.DataBase;
 using System;
 using System.Collections.Generic;
@@ -71,7 +72,7 @@ namespace Steam.WinForms
         {
             labelConsole.Text = "Открытие окна изменения пароля";
 
-            Change_Pass change_Pass = new Change_Pass();
+            ChangeAccountInfo change_Pass = new ChangeAccountInfo();
             change_Pass.ShowDialog();
         }
 

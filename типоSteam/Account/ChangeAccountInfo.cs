@@ -5,16 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Steam
+namespace Steam.Account
 {
-    public partial class Change_Pass : Form
+    public partial class ChangeAccountInfo : Form
     {
         Launcher Launcher { get; set; }
-        public Change_Pass(Launcher launcher) : this()
+        public ChangeAccountInfo(Launcher launcher) : this()
         {
             Launcher = launcher;
         }
-        public Change_Pass()
+        public ChangeAccountInfo()
         {
             InitializeComponent();
         }
@@ -143,7 +143,7 @@ namespace Steam
 
                 MessageBox.Show("Аккаунт успешно удалён", "Грусно", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Application.Exit();
+                System.Windows.Forms.Application.Exit();
             }
             else
             {

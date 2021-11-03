@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Steam.WinForms.WinForms {
+namespace Steam.Application.Settings {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
-    public sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class AccountSettings : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
+        private static AccountSettings defaultInstance = ((AccountSettings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new AccountSettings())));
         
-        public static Settings1 Default {
+        public static AccountSettings Default {
             get {
                 return defaultInstance;
             }

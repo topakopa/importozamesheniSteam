@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Data_Base_Steam\Steam.DataBase.csproj" />
+    <ProjectReference Include="..\Steam.Application\Steam.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,13 +21,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Change_Pass.cs">
+    <Compile Update="Account\ChangeAccountInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Settings1.Designer.cs">
+    <Compile Update="Settings\AccountSettings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Settings1.settings</DependentUpon>
+      <DependentUpon>AccountSettings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -38,9 +39,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Settings1.settings">
+    <None Update="Settings\AccountSettings.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+      <LastGenOutput>AccountSettings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

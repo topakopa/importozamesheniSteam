@@ -1,7 +1,7 @@
 ﻿
-namespace Steam
+namespace Steam.Account
 {
-    partial class Enter
+    partial class Login
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace Steam
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Enter));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.textBoxPasword = new System.Windows.Forms.TextBox();
             this.labelEnter = new System.Windows.Forms.Label();

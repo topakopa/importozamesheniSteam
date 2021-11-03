@@ -1,4 +1,5 @@
 using Steam;
+using Steam.Account;
 using Steam.WinForms;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Steam
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Enter());
+            Application.Run(new Login());
 
             if (Launcher.Start)
             {

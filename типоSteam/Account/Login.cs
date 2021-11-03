@@ -2,23 +2,24 @@
 using Steam;
 using Steam.DataBase;
 using Steam.WinForms;
+using Steam.WinForms.Settings;
 using Steam.WinForms.WinForms;
 using System;
 using System.Configuration;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Steam
+namespace Steam.Account
 {
-    public partial class Enter : Form
+    public partial class Login : Form
     {
-        public Enter()
+        public Login()
         {
             InitializeComponent();
         }
         private void buttonReg_Click(object sender, EventArgs e)
         {
-            Register register = new Register(this);
+            Registration register = new Registration(this);
             register.ShowDialog();
         }
 
@@ -37,15 +38,15 @@ namespace Steam
 
                 if (checkBoxSave.Checked)
                 {
-                    Settings1.Default.login = textBoxLogin.Text;
-                    Settings1.Default.password = textBoxPasword.Text;
-                    Settings1.Default.savePass = checkBoxSave.Checked;
-                    Settings1.Default.Save();
+                    AccountSettings.Default.login = textBoxLogin.Text;
+                    AccountSettings.Default.password = textBoxPasword.Text;
+                    AccountSettings.Default.savePass = checkBoxSave.Checked;
+                    AccountSettings.Default.Save();
                 }
                 else
                 {
-                    Settings1.Default.savePass = false;
-                    Settings1.Default.Save();
+                    AccountSettings.Default.savePass = false;
+                    AccountSettings.Default.Save();
                 }
 
                 this.Close();
@@ -84,11 +85,11 @@ namespace Steam
 
         private void Enter_Load(object sender, EventArgs e)
         {
-            if (Settings1.Default.savePass == true)
+            if (AccountSettings.Default.savePass == true)
             {
-                textBoxLogin.Text = Settings1.Default.login;
-                textBoxPasword.Text = Settings1.Default.password;
-                checkBoxSave.Checked = Settings1.Default.savePass;
+                textBoxLogin.Text = AccountSettings.Default.login;
+                textBoxPasword.Text = AccountSettings.Default.password;
+                checkBoxSave.Checked = AccountSettings.Default.savePass;
             }
 
         }

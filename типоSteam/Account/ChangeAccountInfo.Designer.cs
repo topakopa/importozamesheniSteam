@@ -1,7 +1,7 @@
 ﻿
-namespace Steam
+namespace Steam.Account
 {
-    partial class Change_Pass
+    partial class ChangeAccountInfo
     {
         /// <summary>
         /// Required designer variable.
