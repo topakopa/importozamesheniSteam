@@ -1,9 +1,10 @@
-﻿using Steam.DataBase;
+﻿using Steam.App.Infrastructure;
+using Steam.DataBase;
 using Steam.WinForms;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using AppModel = Steam.App.Models;
 
 namespace Steam.Account
 {
@@ -18,78 +19,71 @@ namespace Steam.Account
         {
             InitializeComponent();
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SteamContext context = new SteamContext();
+            User user = context.Users.Single(u => u.Id == Launcher.ID);
+
+            if (textBoxOldPass.Text != user.Pasword)
+            {
+                MessageBox.Show("Неверный пароль", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                IAccount account = new AppModel.Account();
+                account.ChangeLogin(user.Id, textBoxLogin.Text);
+                MessageBox.Show("Логин успешно изменён", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void buttonReg_Click(object sender, EventArgs e)
         {
             SteamContext context = new SteamContext();
-            string old_pass = textBoxOldPass.Text;
-            string pasword = textBoxPasword.Text;
             User user = context.Users.Single(u => u.Id == Launcher.ID);
 
-            if (textBoxOldPass.Text == "")
+            string old_pass = textBoxOldPass.Text;
+            string pasword = textBoxPasword.Text;
+
+            if (textBoxOldPass.Text != user.Pasword)
             {
-                MessageBox.Show("Поле Старый пароль пустое", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Неверный пароль", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            User loginConf = context.Users.FirstOrDefault(u => u.Login == textBoxLogin.Text);
-            if (textBoxLogin.Text != "")
-            {
-                if (textBoxOldPass.Text != user.Pasword)
-                {
-                    MessageBox.Show("Неверный пароль", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                else if (loginConf != null)
-                {
-                    user.Login = textBoxLogin.Text;
-                    MessageBox.Show("Логин успешно изменён", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-
-                else
-                {
-                    MessageBox.Show("Этот логин занят", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-            }
-
-            if (textBoxPasword.Text == "")
-            {
-                MessageBox.Show("Поле Новый пароль пустое", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (pasword == textBoxDirectPasword.Text)
-            {
-
-
-                if (textBoxOldPass.Text != user.Pasword)
-                {
-                    MessageBox.Show("Неверный пароль", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-
-                    user.Pasword = pasword;
-                    context.SaveChanges();
-
-                    MessageBox.Show("Пароль успешно изменён", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            else
+            if (pasword != textBoxDirectPasword.Text)
             {
                 MessageBox.Show("Пароли не совпадают", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                IAccount account = new AppModel.Account();
+                account.ChangePassword(user.Id, pasword);
+                MessageBox.Show("Пароль успешно изменён", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Width = 557;
+            this.Height = 283;
 
             textBoxPasword.Enabled = false;
             textBoxDirectPasword.Enabled = false;
             textBoxLogin.Enabled = true;
+
             linkLabel1.Visible = false;
             linkLabel3.Visible = true;
 
@@ -100,11 +94,12 @@ namespace Steam.Account
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Width = 260;
+            this.Height = 180;
 
             textBoxPasword.Enabled = true;
             textBoxDirectPasword.Enabled = true;
             textBoxLogin.Enabled = false;
+
             linkLabel1.Visible = true;
             linkLabel3.Visible = false;
 
@@ -134,23 +129,24 @@ namespace Steam.Account
             }
 
             DialogResult dialogResult = MessageBox.Show("Вы уверены что хотите удалить акаунт", "Подтверждение удаления", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dialogResult == DialogResult.Yes)
-            {
-                context.Users.Remove(user);
-                context.SaveChanges();
-
-
-
-                MessageBox.Show("Аккаунт успешно удалён", "Грусно", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                System.Windows.Forms.Application.Exit();
-            }
-            else
+            if (dialogResult != DialogResult.Yes)
             {
                 button1.Visible = false;
                 label2.Visible = false;
+                return;
             }
 
+            try
+            {
+                IAccount account = new AppModel.Account();
+                account.Delete(user.Id);
+                MessageBox.Show("Аккаунт успешно удалён", "Грусно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 

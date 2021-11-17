@@ -1,15 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Steam;
-using Steam.DataBase;
-using Steam.WinForms;
+﻿using Steam.App.Infrastructure;
 using Steam.WinForms.Settings;
-using Steam.WinForms.WinForms;
 using System;
-using System.Configuration;
-using System.Linq;
 using System.Windows.Forms;
+using AppModel = Steam.App.Models;
 
-namespace Steam.Account
+namespace Steam.WinForms.Account
 {
     public partial class Login : Form
     {
@@ -17,73 +12,58 @@ namespace Steam.Account
         {
             InitializeComponent();
         }
-        private void buttonReg_Click(object sender, EventArgs e)
+
+        private void ButtonReg_Click(object sender, EventArgs e)
         {
             Registration register = new Registration(this);
             register.ShowDialog();
         }
 
-        private void buttonEnter_Click(object sender, EventArgs e)
+        private void ButtonEnter_Click(object sender, EventArgs e)
         {
-            SteamContext context = new SteamContext();
-            User user = context.Users.FirstOrDefault(u => u.Login == textBoxLogin.Text && u.Pasword == textBoxPasword.Text);
+            IAccount account = new AppModel.Account();
 
-            if (user != null)
+            string login = textBoxLogin.Text;
+            string password = textBoxPasword.Text;
+
+            try
             {
+                Launcher.ID = account.Authorization(login, password);
+                Launcher.Start = true;
+
                 Console.Beep(260, 200);
                 Console.Beep(370, 300);
 
-                Launcher.Start = true;
-                Launcher.ID = user.Id;
-
-                if (checkBoxSave.Checked)
-                {
-                    AccountSettings.Default.login = textBoxLogin.Text;
-                    AccountSettings.Default.password = textBoxPasword.Text;
-                    AccountSettings.Default.savePass = checkBoxSave.Checked;
-                    AccountSettings.Default.Save();
-                }
-                else
-                {
-                    AccountSettings.Default.savePass = false;
-                    AccountSettings.Default.Save();
-                }
-
-                this.Close();
+                SaveSettings();
+                Close();
             }
-            else
+            catch (Exception ex)
             {
-                labelErr.Text = "Неверный логин или пароль";
+                labelErr.Text = ex.Message;
+
                 Console.Beep(200, 300);
                 Console.Beep(37, 500);
-                Console.WriteLine("Heверный логин или пароль");
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void SaveSettings()
         {
-            if (checkBox1.Checked)
+            if (checkBoxSave.Checked)
             {
-                textBoxPasword.UseSystemPasswordChar = false;
+                AccountSettings.Default.login = textBoxLogin.Text;
+                AccountSettings.Default.password = textBoxPasword.Text;
             }
-            else
-            {
-                textBoxPasword.UseSystemPasswordChar = true;
-            }
+
+            AccountSettings.Default.savePass = checkBoxSave.Checked;
+            AccountSettings.Default.Save();
         }
 
-        private void HelpButtonClick(object sender, System.ComponentModel.CancelEventArgs e)
+        private void CheckBoxShowPass_CheckedChanged(object sender, EventArgs e)
         {
-            textBox1.Visible = true;
-            textBox2.Visible = true;
+            textBoxPasword.UseSystemPasswordChar = !checkBoxShowPass.Checked;
         }
 
-        private void checkBoxSave_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Enter_Load(object sender, EventArgs e)
+        private void Settings_Load(object sender, EventArgs e)
         {
             if (AccountSettings.Default.savePass == true)
             {

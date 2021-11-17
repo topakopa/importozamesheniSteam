@@ -40,6 +40,7 @@ namespace Steam.Account
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonReg
@@ -52,7 +53,7 @@ namespace Steam.Account
             this.buttonReg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.buttonReg.Location = new System.Drawing.Point(7, 89);
             this.buttonReg.Name = "buttonReg";
-            this.buttonReg.Size = new System.Drawing.Size(229, 52);
+            this.buttonReg.Size = new System.Drawing.Size(229, 24);
             this.buttonReg.TabIndex = 9;
             this.buttonReg.Text = "Сохранить";
             this.buttonReg.UseCompatibleTextRendering = true;
@@ -88,7 +89,7 @@ namespace Steam.Account
             // textBoxLogin
             // 
             this.textBoxLogin.Enabled = false;
-            this.textBoxLogin.Location = new System.Drawing.Point(300, 8);
+            this.textBoxLogin.Location = new System.Drawing.Point(7, 149);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.PlaceholderText = "Введите новый логин ";
             this.textBoxLogin.Size = new System.Drawing.Size(229, 21);
@@ -97,16 +98,16 @@ namespace Steam.Account
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(262, -13);
+            this.label1.Location = new System.Drawing.Point(7, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(9, 180);
+            this.label1.Size = new System.Drawing.Size(231, 15);
             this.label1.TabIndex = 12;
-            this.label1.Text = "|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|\r\n|";
+            this.label1.Text = "--------------------------------------------------------";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(300, 38);
+            this.label2.Location = new System.Drawing.Point(5, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(231, 30);
             this.label2.TabIndex = 13;
@@ -115,7 +116,7 @@ namespace Steam.Account
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(7, 144);
+            this.linkLabel1.Location = new System.Drawing.Point(7, 116);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(88, 15);
             this.linkLabel1.TabIndex = 14;
@@ -126,7 +127,7 @@ namespace Steam.Account
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(146, 144);
+            this.linkLabel2.Location = new System.Drawing.Point(146, 116);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(90, 15);
             this.linkLabel2.TabIndex = 15;
@@ -136,9 +137,9 @@ namespace Steam.Account
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(302, 89);
+            this.button1.Location = new System.Drawing.Point(5, 206);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(223, 52);
+            this.button1.Size = new System.Drawing.Size(107, 23);
             this.button1.TabIndex = 16;
             this.button1.Text = "Удалить аккаунт";
             this.button1.UseVisualStyleBackColor = true;
@@ -148,7 +149,7 @@ namespace Steam.Account
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(300, 144);
+            this.linkLabel3.Location = new System.Drawing.Point(5, 116);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(95, 15);
             this.linkLabel3.TabIndex = 17;
@@ -156,7 +157,24 @@ namespace Steam.Account
             this.linkLabel3.Text = "Изменить пароль";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
-            // Change_Pass
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(119, 206);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(117, 24);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Сохранить";
+            this.button2.UseCompatibleTextRendering = true;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // ChangeAccountInfo
             // 
             this.AcceptButton = this.buttonReg;
             this.AccessibleDescription = "I don\'t know how it work";
@@ -165,7 +183,8 @@ namespace Steam.Account
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(240, 163);
+            this.ClientSize = new System.Drawing.Size(241, 236);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel2);
@@ -180,7 +199,7 @@ namespace Steam.Account
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Change_Pass";
+            this.Name = "ChangeAccountInfo";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -203,5 +222,6 @@ namespace Steam.Account
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.Button button2;
     }
 }

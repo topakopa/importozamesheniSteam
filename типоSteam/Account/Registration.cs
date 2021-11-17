@@ -1,9 +1,9 @@
-﻿using Steam.Application.Infrastructure;
+﻿using Steam.App.Infrastructure;
 using System;
 using System.Windows.Forms;
-using AppModel = Steam.Application.Models;
+using AppModel = Steam.App.Models;
 
-namespace Steam.Account
+namespace Steam.WinForms.Account
 {
     public partial class Registration : Form
     {

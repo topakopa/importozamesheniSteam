@@ -1,13 +1,8 @@
-using Steam;
-using Steam.Account;
-using Steam.WinForms;
+using Steam.WinForms.Account;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Steam
+namespace Steam.WinForms
 {
     class Program
     {
@@ -26,7 +21,7 @@ namespace Steam
             {
                 Application.Run(new Launcher());
             }
-            
+
         }
     }
 }

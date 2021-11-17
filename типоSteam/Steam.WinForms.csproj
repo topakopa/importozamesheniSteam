@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Data_Base_Steam\Steam.DataBase.csproj" />
-    <ProjectReference Include="..\Steam.Application\Steam.Application.csproj" />
+    <ProjectReference Include="..\Steam.Application\Steam.App.csproj" />
   </ItemGroup>
 
   <ItemGroup>

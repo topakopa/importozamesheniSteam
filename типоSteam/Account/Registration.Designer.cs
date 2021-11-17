@@ -1,5 +1,5 @@
 ﻿
-namespace Steam.Account
+namespace Steam.WinForms.Account
 {
     partial class Registration
     {

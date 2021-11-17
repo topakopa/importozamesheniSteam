@@ -1,9 +1,9 @@
-﻿using Steam.Application.Infrastructure;
+﻿using Steam.App.Infrastructure;
 using Steam.DataBase;
 using System;
 using System.Linq;
 
-namespace Steam.Application.Models
+namespace Steam.App.Models
 {
     public class Account : IAccount
     {
@@ -22,6 +22,7 @@ namespace Steam.Application.Models
             if (existUser == null)
             {
                 user.Login = newLogin;
+                context.SaveChanges();
                 return true;
             }
             else
@@ -112,6 +113,7 @@ namespace Steam.Application.Models
             User user = context.Users.Single(u => u.Id == id);
 
             context.Users.Remove(user);
+            context.SaveChanges();
             return true;
         }
     }

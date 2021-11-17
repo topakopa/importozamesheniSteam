@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steam.WinForms", "типоS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steam.DataBase", "Data_Base_Steam\Steam.DataBase.csproj", "{A1F7A2C6-9A03-4C0D-9061-0A03E0849302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steam.Application", "Steam.Application\Steam.Application.csproj", "{A13D2FDA-DA2F-4A5D-A6D4-BBBDD9C0D21C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Steam.App", "Steam.Application\Steam.App.csproj", "{A13D2FDA-DA2F-4A5D-A6D4-BBBDD9C0D21C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

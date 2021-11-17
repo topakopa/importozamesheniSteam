@@ -1,4 +1,4 @@
-﻿namespace Steam.Application.Infrastructure
+﻿namespace Steam.App.Infrastructure
 {
     public interface IAccount
     {
