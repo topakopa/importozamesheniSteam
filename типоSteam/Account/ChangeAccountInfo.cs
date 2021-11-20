@@ -32,7 +32,7 @@ namespace Steam.Account
 
             try
             {
-                IAccount account = new AppModel.Account();
+                IAccountManager account = new AppModel.AccountManager();
                 account.ChangeLogin(user.Id, textBoxLogin.Text);
                 MessageBox.Show("Логин успешно изменён", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -65,7 +65,7 @@ namespace Steam.Account
 
             try
             {
-                IAccount account = new AppModel.Account();
+                IAccountManager account = new AppModel.AccountManager();
                 account.ChangePassword(user.Id, pasword);
                 MessageBox.Show("Пароль успешно изменён", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -138,7 +138,7 @@ namespace Steam.Account
 
             try
             {
-                IAccount account = new AppModel.Account();
+                IAccountManager account = new AppModel.AccountManager();
                 account.Delete(user.Id);
                 MessageBox.Show("Аккаунт успешно удалён", "Грусно", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Application.Exit();

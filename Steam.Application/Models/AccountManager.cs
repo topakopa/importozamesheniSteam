@@ -1,12 +1,14 @@
-﻿using Steam.App.Infrastructure;
+﻿using Microsoft.EntityFrameworkCore;
+using Steam.App.Infrastructure;
 using Steam.DataBase;
 using System;
 using System.Linq;
 
 namespace Steam.App.Models
 {
-    public class Account : IAccount
+    public class AccountManager : IAccountManager
     {
+        private readonly SteamContext _steamContext = new SteamContext();
         public bool ChangeLogin(long id, string newLogin)
         {
             if (string.IsNullOrEmpty(newLogin))
@@ -115,6 +117,18 @@ namespace Steam.App.Models
             context.Users.Remove(user);
             context.SaveChanges();
             return true;
+        }
+
+        public void ChangeNickname(long id, string newNick)
+        {
+            User user = _steamContext.Users.Single(u => u.Id == id);
+            user.Nikname = newNick;
+            _steamContext.SaveChanges();
+        }
+
+        public User GetUser(long id)
+        {
+            return _steamContext.Users.Include(u => u.UserGames).Single(users => users.Id == id);
         }
     }
 }

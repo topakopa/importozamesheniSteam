@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Steam.Account;
+using Steam.App.Infrastructure;
+using Steam.App.Models;
 using Steam.DataBase;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -14,49 +14,46 @@ namespace Steam.WinForms
 {
     public partial class Launcher : Form
     {
+        private readonly IGameManager _gameManager = new GameManager();
+        private readonly IAccountManager _accountManager = new AccountManager();
+
         public static bool Start { get; set; }
         public static long ID { get; set; }
         public static UserGame Game { get; set; }
+
         public Launcher()
         {
             InitializeComponent();
-            contextMenuGameEdit.Items[0].Click += ShowEditGame;
-            contextMenuGameEdit.Items[4].Click += ChangeNick;
-            contextMenuGameEdit.Items[5].Click += ChangePass;
-            contextMenuGameEdit.Items[1].Click += ShowEditGame1;
-            contextMenuGameEdit.Items[2].Click += GameDEL;
+            contextMenuGameEdit.Items[0].Click += ShowAddGame;
+            contextMenuGameEdit.Items[4].Click += ChangeNickname;
+            contextMenuGameEdit.Items[5].Click += ChangeAccountInfo;
+            contextMenuGameEdit.Items[1].Click += ShowEditGame;
+            contextMenuGameEdit.Items[2].Click += GameDelete;
         }
 
-        private void GameDEL(object sender, EventArgs e)
+        private void GameDelete(object sender, EventArgs e)
         {
-            SteamContext steamContext = new SteamContext();
-
             if (GameList.SelectedItems.Count != 0)
             {
                 DialogResult dialogResult = MessageBox.Show("Вы уверены что хотите удалить игру", "Подтверждение удаления", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    UserGame game = steamContext.UserGames.Single(users => users.UserId == ID && users.GameName == GameList.SelectedItems[0].Text);
-                    steamContext.UserGames.Remove(game);
-                    steamContext.SaveChanges();
-                    Update_gameList();
+                    _gameManager.DeleteGame(ID, GameList.SelectedItems[0].Text);
 
+                    UpdateGameList();
                 }
             }
             else
             {
                 MessageBox.Show("Игра не выбрана", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
-        private void ShowEditGame1(object sender, EventArgs e)
+        private void ShowEditGame(object sender, EventArgs e)
         {
-            SteamContext steamContext = new SteamContext();
             if (GameList.SelectedItems.Count != 0)
             {
-                Game = steamContext.UserGames.Single(users => users.UserId == ID && users.GameName == GameList.SelectedItems[0].Text);
+                Game = _gameManager.GetUserGame(ID, GameList.SelectedItems[0].Text);
             }
             else
             {
@@ -65,10 +62,9 @@ namespace Steam.WinForms
 
             GameEdit formGameEdit = new GameEdit(this);
             formGameEdit.Show();
-
         }
 
-        private void ChangePass(object sender, EventArgs e)
+        private void ChangeAccountInfo(object sender, EventArgs e)
         {
             labelConsole.Text = "Открытие окна изменения пароля";
 
@@ -76,7 +72,7 @@ namespace Steam.WinForms
             change_Pass.ShowDialog();
         }
 
-        private void ChangeNick(object sender, EventArgs e)
+        private void ChangeNickname(object sender, EventArgs e)
         {
             labelNick.Visible = false;
 
@@ -85,12 +81,12 @@ namespace Steam.WinForms
             textBoxNicname.Focus();
 
             buttonCanselNick.Visible = true;
-            buttonOKnick.Visible = true;
+            buttonOkNick.Visible = true;
 
             labelConsole.Text = "Запуск системы изменения ника";
         }
 
-        private void ShowEditGame(object sender, EventArgs e)
+        private void ShowAddGame(object sender, EventArgs e)
         {
             GameEdit formGameEdit = new GameEdit(this);
             formGameEdit.Show();
@@ -103,24 +99,19 @@ namespace Steam.WinForms
 
         private void Launcher_Load(object sender, EventArgs e)
         {
-            SteamContext steamContext = new SteamContext();
-
             labelConsole.Text = "Установка Никнейма";
-            User user = steamContext.Users.Include(u => u.UserGames).Single(users => users.Id == ID);
+            User user = _accountManager.GetUser(ID);
 
             string nick = user.Nikname;
             labelNick.Text = nick;
             labelConsole.Text = "Никнейм установлен";
-            Update_gameList();
-
+            UpdateGameList();
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
 
         }
-
-
 
         private void buttonCanselNick_Click(object sender, EventArgs e)
         {
@@ -131,7 +122,7 @@ namespace Steam.WinForms
             textBoxNicname.Text = "";
 
             buttonCanselNick.Visible = false;
-            buttonOKnick.Visible = false;
+            buttonOkNick.Visible = false;
 
             labelConsole.Text = "Изменение ника отменено";
         }
@@ -144,15 +135,10 @@ namespace Steam.WinForms
             textBoxNicname.PlaceholderText = "";
 
             buttonCanselNick.Visible = false;
-            buttonOKnick.Visible = false;
+            buttonOkNick.Visible = false;
 
             string nick = textBoxNicname.Text;
-            SteamContext context = new SteamContext();
-
-            User user = context.Users.Single(u => u.Id == ID);
-            user.Nikname = nick;
-
-            context.SaveChanges();
+            _accountManager.ChangeNickname(ID, nick);
 
             textBoxNicname.Text = "";
             labelNick.Text = nick;
@@ -161,22 +147,15 @@ namespace Steam.WinForms
             labelConsole.Text = "Ник успешно изменён";
         }
 
-        private void Select_game(object sender, EventArgs e)
+        private void SelectGame(object sender, EventArgs e)
         {
-            SteamContext context = new SteamContext();
-            string game_name;
-
-            if (GameList.SelectedItems.Count > 0)
-            {
-                game_name = GameList.SelectedItems[0].Text;
-            }
-            else
+            if (GameList.SelectedItems.Count == 0)
             {
                 return;
             }
 
-            User user = context.Users.Include(u => u.UserGames).Single(u => u.Id == ID);
-            UserGame game = user.UserGames.FirstOrDefault(u => u.GameName == game_name);
+            string gameName = GameList.SelectedItems[0].Text;
+            UserGame game = _gameManager.GetUserGame(ID, gameName);
 
             if (game.ImagePath != null)
             {
@@ -197,50 +176,37 @@ namespace Steam.WinForms
             }
         }
 
-        public void Update_gameList(string filter = null)
+        public void UpdateGameList(string filter = null)
         {
-            SteamContext context = new SteamContext();
-            User user = context.Users.Include(u => u.UserGames).Single(users => users.Id == ID);
-            UserGame[] games = user.UserGames.ToArray();
-
             GameList.Items.Clear();
 
-            if (filter != null)
-            {
-                games = games.Where(u => u.GameName.ToLower().Contains(filter.ToLower())).ToArray();
-            }
-
-            foreach (UserGame game in games)
+            foreach (UserGame game in _gameManager.GetUserGames(ID, filter))
             {
                 Icon icon = Icon.ExtractAssociatedIcon(game.GamePath);
-                bool if_find_icon = false;
+                int iconIndex = GetIconIndex(icon);
 
-                for (int i = 0; i < GameList.SmallImageList.Images.Count; i++)
+                GameList.Items.Add(game.GameName, iconIndex);
+            }
+        }
+
+        private int GetIconIndex(Icon icon)
+        {
+            for (int i = 0; i < GameList.SmallImageList.Images.Count; i++)
+            {
+                if (icon.Equals(GameList.SmallImageList.Images[i]))
                 {
-                    if (icon.Equals(GameList.SmallImageList.Images[i]))
-                    {
-                        if_find_icon = true;
-                        GameList.Items.Add(game.GameName, i);
-                    }
-
+                    return i;
                 }
-                if (if_find_icon == false)
-                {
-                    GameList.SmallImageList.Images.Add(icon);
-                    GameList.Items.Add(game.GameName, GameList.SmallImageList.Images.Count - 1);
-                }
-
             }
 
+            GameList.SmallImageList.Images.Add(icon);
+            return GameList.SmallImageList.Images.Count - 1;
         }
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-            SteamContext steamContext = new SteamContext();
-            UserGame game = steamContext.UserGames.Single(users => users.UserId == ID && users.GameName == GameList.SelectedItems[0].Text);
-
+            UserGame game = _gameManager.GetUserGame(ID, GameList.SelectedItems[0].Text);
             Process.Start(game.GamePath);
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -260,15 +226,16 @@ namespace Steam.WinForms
                 Search();
             }
         }
+
         private void Search()
         {
             if (textBoxSearch.Text == "")
             {
-                Update_gameList();
+                UpdateGameList();
             }
             else
             {
-                Update_gameList(textBoxSearch.Text);
+                UpdateGameList(textBoxSearch.Text);
             }
         }
 

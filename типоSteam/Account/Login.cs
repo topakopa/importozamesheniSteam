@@ -21,7 +21,7 @@ namespace Steam.WinForms.Account
 
         private void ButtonEnter_Click(object sender, EventArgs e)
         {
-            IAccount account = new AppModel.Account();
+            IAccountManager account = new AppModel.AccountManager();
 
             string login = textBoxLogin.Text;
             string password = textBoxPasword.Text;

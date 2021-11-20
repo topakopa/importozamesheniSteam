@@ -101,7 +101,7 @@ namespace Steam.WinForms
                     game.ImagePath = ImagePath;
 
                     context.SaveChanges();
-                    Launcher.Update_gameList();
+                    Launcher.UpdateGameList();
 
                     MessageBox.Show("Игра успешно изменена", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -120,7 +120,7 @@ namespace Steam.WinForms
                     });
 
                     context.SaveChanges();
-                    Launcher.Update_gameList();
+                    Launcher.UpdateGameList();
 
                     MessageBox.Show("Игра успешно добавлена", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

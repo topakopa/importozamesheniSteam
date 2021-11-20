@@ -8,7 +8,7 @@ namespace Steam.WinForms.Account
     public partial class Registration : Form
     {
         Login Enter { get; set; }
-        private readonly IAccount _account = new AppModel.Account();
+        private readonly IAccountManager _account = new AppModel.AccountManager();
 
         public Registration(Login enter) : this()
         {

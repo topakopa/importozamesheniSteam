@@ -49,7 +49,7 @@ namespace Steam.WinForms
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.progressBarConsole = new System.Windows.Forms.ToolStripProgressBar();
             this.labelConsole = new System.Windows.Forms.ToolStripStatusLabel();
-            this.buttonOKnick = new System.Windows.Forms.Button();
+            this.buttonOkNick = new System.Windows.Forms.Button();
             this.buttonCanselNick = new System.Windows.Forms.Button();
             this.toolTipSteam = new System.Windows.Forms.ToolTip(this.components);
             this.GameList = new System.Windows.Forms.ListView();
@@ -187,13 +187,13 @@ namespace Steam.WinForms
             // 
             // buttonOKnick
             // 
-            resources.ApplyResources(this.buttonOKnick, "buttonOKnick");
-            this.buttonOKnick.BackColor = System.Drawing.Color.Transparent;
-            this.buttonOKnick.FlatAppearance.BorderSize = 0;
-            this.buttonOKnick.Name = "buttonOKnick";
-            this.toolTipSteam.SetToolTip(this.buttonOKnick, resources.GetString("buttonOKnick.ToolTip"));
-            this.buttonOKnick.UseVisualStyleBackColor = false;
-            this.buttonOKnick.Click += new System.EventHandler(this.buttonOKnick_Click);
+            resources.ApplyResources(this.buttonOkNick, "buttonOKnick");
+            this.buttonOkNick.BackColor = System.Drawing.Color.Transparent;
+            this.buttonOkNick.FlatAppearance.BorderSize = 0;
+            this.buttonOkNick.Name = "buttonOKnick";
+            this.toolTipSteam.SetToolTip(this.buttonOkNick, resources.GetString("buttonOKnick.ToolTip"));
+            this.buttonOkNick.UseVisualStyleBackColor = false;
+            this.buttonOkNick.Click += new System.EventHandler(this.buttonOKnick_Click);
             // 
             // buttonCanselNick
             // 
@@ -214,7 +214,7 @@ namespace Steam.WinForms
             this.toolTipSteam.SetToolTip(this.GameList, resources.GetString("GameList.ToolTip"));
             this.GameList.UseCompatibleStateImageBehavior = false;
             this.GameList.View = System.Windows.Forms.View.List;
-            this.GameList.SelectedIndexChanged += new System.EventHandler(this.Select_game);
+            this.GameList.SelectedIndexChanged += new System.EventHandler(this.SelectGame);
             // 
             // imageList1
             // 
@@ -240,7 +240,7 @@ namespace Steam.WinForms
             this.Controls.Add(this.GameInfo);
             this.Controls.Add(this.GameList);
             this.Controls.Add(this.buttonCanselNick);
-            this.Controls.Add(this.buttonOKnick);
+            this.Controls.Add(this.buttonOkNick);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.labelNick);
             this.Controls.Add(this.buttonSearch);
@@ -285,7 +285,7 @@ namespace Steam.WinForms
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripProgressBar progressBarConsole;
         public System.Windows.Forms.ToolStripStatusLabel labelConsole;
-        private System.Windows.Forms.Button buttonOKnick;
+        private System.Windows.Forms.Button buttonOkNick;
         private System.Windows.Forms.Button buttonCanselNick;
         private System.Windows.Forms.ToolTip toolTipSteam;
         private System.Windows.Forms.ImageList imageList1;
