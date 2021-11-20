@@ -9,6 +9,11 @@ namespace Steam.App.Infrastructure
     {
         void DeleteGame(long userID, string gameName);
         UserGame[] GetUserGames(long userID, string filter = null);
+        UserGame GetUserGame(long gameID);
         UserGame GetUserGame(long userID, string gameName);
+        void ChangeUserGameData(UserGame userGame);
+        void AddUserGame(UserGame userGame);
+
+
     }
 }

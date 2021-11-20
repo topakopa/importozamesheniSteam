@@ -14,8 +14,8 @@ namespace Steam.WinForms
 {
     public partial class Launcher : Form
     {
-        private readonly IGameManager _gameManager = new GameManager();
-        private readonly IAccountManager _accountManager = new AccountManager();
+        public readonly IGameManager _gameManager = new GameManager();
+        public readonly IAccountManager _accountManager = new AccountManager();
 
         public static bool Start { get; set; }
         public static long ID { get; set; }

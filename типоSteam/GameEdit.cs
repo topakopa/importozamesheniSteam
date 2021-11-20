@@ -10,10 +10,12 @@ namespace Steam.WinForms
     {
         Launcher Launcher { get; set; }
         string ImagePath { get; set; }
+
         public GameEdit(Launcher launcher) : this()
         {
             Launcher = launcher;
         }
+
         public GameEdit()
         {
             InitializeComponent();
@@ -23,6 +25,7 @@ namespace Steam.WinForms
         {
             DialogResult dialogResult = openFileDialogImage.ShowDialog();
             Launcher.labelConsole.Text = "Открыто окно выбора изображения";
+
             if (dialogResult == DialogResult.OK)
             {
                 Image image = Image.FromFile(openFileDialogImage.FileName);
@@ -38,8 +41,8 @@ namespace Steam.WinForms
 
         private void FormGameEdit_Load(object sender, EventArgs e)
         {
-            SteamContext context = new SteamContext();
             Launcher.labelConsole.Text = "Открытие окна добавления / изменения игры";
+
             if (Launcher.Game != null)
             {
                 textBoxGameName.Text = Launcher.Game.GameName;
@@ -66,6 +69,7 @@ namespace Steam.WinForms
         {
             DialogResult dialogResult = openFileDialogGame.ShowDialog();
             Launcher.labelConsole.Text = "Открыто окно выбора приложения";
+
             if (dialogResult == DialogResult.OK)
             {
                 textBoxGamePath.Text = openFileDialogGame.FileName;
@@ -83,57 +87,45 @@ namespace Steam.WinForms
 
         private void buttonSave_Click_1(object sender, EventArgs e)
         {
-            SteamContext context = new SteamContext();
-
             string gameName = textBoxGameName.Text;
             string gamePath = textBoxGamePath.Text;
             string gameInfo = textBoxGameInfo.Text;
 
-            if (gameName != null && gamePath != null)
+            if (string.IsNullOrEmpty(gameName) && string.IsNullOrEmpty(gamePath))
             {
-                if (Launcher.Game != null)
-                {
-                    UserGame game = context.UserGames.Single(u => u.Id == Launcher.Game.Id);
+                MessageBox.Show("Нужные поля пустые", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-                    game.GameName = gameName;
-                    game.GameInfo = gameInfo;
-                    game.GamePath = gamePath;
-                    game.ImagePath = ImagePath;
+            if (Launcher.Game != null)
+            {
+                UserGame game = Launcher._gameManager.GetUserGame(Launcher.Game.Id);
+                game.GameName = gameName;
+                game.GameInfo = gameInfo;
+                game.GamePath = gamePath;
+                game.ImagePath = ImagePath;
 
-                    context.SaveChanges();
-                    Launcher.UpdateGameList();
+                Launcher._gameManager.ChangeUserGameData(game);
+                Launcher.UpdateGameList();
 
-                    MessageBox.Show("Игра успешно изменена", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    Launcher.Game = null;
-                    this.Close();
-                }
-                else
-                {
-                    context.UserGames.Add(new Steam.DataBase.UserGame()
-                    {
-                        UserId = Launcher.ID,
-                        GameName = gameName,
-                        GamePath = gamePath,
-                        GameInfo = gameInfo,
-                        ImagePath = ImagePath
-                    });
-
-                    context.SaveChanges();
-                    Launcher.UpdateGameList();
-
-                    MessageBox.Show("Игра успешно добавлена", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    this.Close();
-                }
-
+                MessageBox.Show("Игра успешно изменена", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Launcher.Game = null;
             }
             else
             {
-                MessageBox.Show("Нужные поля пустые", "Критическая ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                UserGame game = new UserGame();
+                game.GameName = gameName;
+                game.GameInfo = gameInfo;
+                game.GamePath = gamePath;
+                game.ImagePath = ImagePath;
+
+                Launcher._gameManager.AddUserGame(game);
+                Launcher.UpdateGameList();
+
+                MessageBox.Show("Игра успешно добавлена", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-
+            this.Close();
         }
 
         private void Form_Closed(object sender, FormClosedEventArgs e)

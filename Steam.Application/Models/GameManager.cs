@@ -8,6 +8,19 @@ namespace Steam.App.Models
     public class GameManager : IGameManager
     {
         private readonly SteamContext _steamContext = new SteamContext();
+
+        public void AddUserGame(UserGame userGame)
+        {
+            _steamContext.UserGames.Add(userGame);
+            _steamContext.SaveChanges();
+        }
+
+        public void ChangeUserGameData(UserGame userGame)
+        {
+            _steamContext.UserGames.Update(userGame);
+            _steamContext.SaveChanges();
+        }
+
         public void DeleteGame(long userID, string gameName)
         {
             UserGame game = _steamContext.UserGames.Single(users => users.UserId == userID && users.GameName == gameName);
@@ -19,6 +32,11 @@ namespace Steam.App.Models
         public UserGame GetUserGame(long userID, string gameName)
         {
             return _steamContext.UserGames.Single(users => users.UserId == userID && users.GameName == gameName);
+        }
+
+        public UserGame GetUserGame(long gameID)
+        {
+            return _steamContext.UserGames.Single(u => u.Id == gameID);
         }
 
         public UserGame[] GetUserGames(long userID, string filter = null)
