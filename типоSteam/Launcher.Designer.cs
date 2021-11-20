@@ -46,9 +46,6 @@ namespace Steam.WinForms
             this.buttonSearch = new System.Windows.Forms.Button();
             this.labelNick = new System.Windows.Forms.Label();
             this.textBoxNicname = new System.Windows.Forms.TextBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.progressBarConsole = new System.Windows.Forms.ToolStripProgressBar();
-            this.labelConsole = new System.Windows.Forms.ToolStripStatusLabel();
             this.buttonOkNick = new System.Windows.Forms.Button();
             this.buttonCanselNick = new System.Windows.Forms.Button();
             this.toolTipSteam = new System.Windows.Forms.ToolTip(this.components);
@@ -57,7 +54,6 @@ namespace Steam.WinForms
             this.GameInfo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GameScrn)).BeginInit();
             this.contextMenuGameEdit.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelNicname
@@ -166,32 +162,13 @@ namespace Steam.WinForms
             this.textBoxNicname.Name = "textBoxNicname";
             this.toolTipSteam.SetToolTip(this.textBoxNicname, resources.GetString("textBoxNicname.ToolTip"));
             // 
-            // statusStrip1
+            // buttonOkNick
             // 
-            resources.ApplyResources(this.statusStrip1, "statusStrip1");
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.progressBarConsole,
-            this.labelConsole});
-            this.statusStrip1.Name = "statusStrip1";
-            this.toolTipSteam.SetToolTip(this.statusStrip1, resources.GetString("statusStrip1.ToolTip"));
-            // 
-            // progressBarConsole
-            // 
-            resources.ApplyResources(this.progressBarConsole, "progressBarConsole");
-            this.progressBarConsole.Name = "progressBarConsole";
-            // 
-            // labelConsole
-            // 
-            resources.ApplyResources(this.labelConsole, "labelConsole");
-            this.labelConsole.Name = "labelConsole";
-            // 
-            // buttonOKnick
-            // 
-            resources.ApplyResources(this.buttonOkNick, "buttonOKnick");
+            resources.ApplyResources(this.buttonOkNick, "buttonOkNick");
             this.buttonOkNick.BackColor = System.Drawing.Color.Transparent;
             this.buttonOkNick.FlatAppearance.BorderSize = 0;
-            this.buttonOkNick.Name = "buttonOKnick";
-            this.toolTipSteam.SetToolTip(this.buttonOkNick, resources.GetString("buttonOKnick.ToolTip"));
+            this.buttonOkNick.Name = "buttonOkNick";
+            this.toolTipSteam.SetToolTip(this.buttonOkNick, resources.GetString("buttonOkNick.ToolTip"));
             this.buttonOkNick.UseVisualStyleBackColor = false;
             this.buttonOkNick.Click += new System.EventHandler(this.buttonOKnick_Click);
             // 
@@ -241,7 +218,6 @@ namespace Steam.WinForms
             this.Controls.Add(this.GameList);
             this.Controls.Add(this.buttonCanselNick);
             this.Controls.Add(this.buttonOkNick);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.labelNick);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textBoxSearch);
@@ -257,8 +233,6 @@ namespace Steam.WinForms
             this.Load += new System.EventHandler(this.Launcher_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GameScrn)).EndInit();
             this.contextMenuGameEdit.ResumeLayout(false);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,9 +256,6 @@ namespace Steam.WinForms
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemEditNick;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemEditPass;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripProgressBar progressBarConsole;
-        public System.Windows.Forms.ToolStripStatusLabel labelConsole;
         private System.Windows.Forms.Button buttonOkNick;
         private System.Windows.Forms.Button buttonCanselNick;
         private System.Windows.Forms.ToolTip toolTipSteam;

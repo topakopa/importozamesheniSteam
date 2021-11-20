@@ -66,8 +66,6 @@ namespace Steam.WinForms
 
         private void ChangeAccountInfo(object sender, EventArgs e)
         {
-            labelConsole.Text = "Открытие окна изменения пароля";
-
             ChangeAccountInfo change_Pass = new ChangeAccountInfo();
             change_Pass.ShowDialog();
         }
@@ -82,8 +80,6 @@ namespace Steam.WinForms
 
             buttonCanselNick.Visible = true;
             buttonOkNick.Visible = true;
-
-            labelConsole.Text = "Запуск системы изменения ника";
         }
 
         private void ShowAddGame(object sender, EventArgs e)
@@ -99,12 +95,11 @@ namespace Steam.WinForms
 
         private void Launcher_Load(object sender, EventArgs e)
         {
-            labelConsole.Text = "Установка Никнейма";
             User user = _accountManager.GetUser(ID);
 
             string nick = user.Nikname;
             labelNick.Text = nick;
-            labelConsole.Text = "Никнейм установлен";
+
             UpdateGameList();
         }
 
@@ -123,14 +118,10 @@ namespace Steam.WinForms
 
             buttonCanselNick.Visible = false;
             buttonOkNick.Visible = false;
-
-            labelConsole.Text = "Изменение ника отменено";
         }
 
         private void buttonOKnick_Click(object sender, EventArgs e)
         {
-            labelConsole.Text = "Начата процедура изменения ника";
-
             textBoxNicname.Enabled = false;
             textBoxNicname.PlaceholderText = "";
 
@@ -143,8 +134,6 @@ namespace Steam.WinForms
             textBoxNicname.Text = "";
             labelNick.Text = nick;
             labelNick.Visible = true;
-
-            labelConsole.Text = "Ник успешно изменён";
         }
 
         private void SelectGame(object sender, EventArgs e)

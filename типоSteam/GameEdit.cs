@@ -1,7 +1,6 @@
 ﻿using Steam.DataBase;
 using System;
 using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace Steam.WinForms
@@ -24,7 +23,6 @@ namespace Steam.WinForms
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = openFileDialogImage.ShowDialog();
-            Launcher.labelConsole.Text = "Открыто окно выбора изображения";
 
             if (dialogResult == DialogResult.OK)
             {
@@ -32,17 +30,13 @@ namespace Steam.WinForms
                 ImagePath = openFileDialogImage.FileName;
 
                 this.Height = 631;
-                Launcher.labelConsole.Text = "Изменён размер окна добавления / изменения игры";
 
                 pictureBox1.Image = image;
-                Launcher.labelConsole.Text = "Установлено изображение";
             }
         }
 
         private void FormGameEdit_Load(object sender, EventArgs e)
         {
-            Launcher.labelConsole.Text = "Открытие окна добавления / изменения игры";
-
             if (Launcher.Game != null)
             {
                 textBoxGameName.Text = Launcher.Game.GameName;
@@ -68,12 +62,10 @@ namespace Steam.WinForms
         private void buttonSave_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = openFileDialogGame.ShowDialog();
-            Launcher.labelConsole.Text = "Открыто окно выбора приложения";
 
             if (dialogResult == DialogResult.OK)
             {
                 textBoxGamePath.Text = openFileDialogGame.FileName;
-                Launcher.labelConsole.Text = "Установлен путь к приложению";
             }
         }
 
